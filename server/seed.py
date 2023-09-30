@@ -7,6 +7,8 @@ from faker import Faker
 from app import app
 from models import db, Message
 
+# db.init_app(app)
+
 fake = Faker()
 
 usernames = [fake.first_name() for i in range(4)]
